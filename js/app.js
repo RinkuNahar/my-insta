@@ -130,6 +130,8 @@ const createPost = (post) => {
                   <span class="post__date-time">30 minutes ago</span>
                 </div>
               </div>
+
+              
       `;
     return div;
 };
@@ -160,6 +162,7 @@ const displayReportedPosts = () => {
         document.getElementById( "reported" ).appendChild(div);
     });
 };
+
 
 const loadPosts = async () =>{
   let data = await fetch('../data/posts.json');
