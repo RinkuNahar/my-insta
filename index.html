@@ -77,7 +77,34 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <footer></footer>
+        <footer class="container mt-4 bg-light p-4">
+
+            <h2>1. How does javascript work?</h2>
+            <p class="fs-5">After executing JS code it gives the output via c++ and it uses internally JIT.When we write JS code we can see it through browser,and browser needs to convert the code into machine language.To do this browser use v8 javascript engine.It stays in chrome but for other browser like firefox it is spidermonkey, for internet explorer it is chakra.So at first it parse the JS code and then abstract the syntax tree and then generate bytecode.So after optimizing and compiling the JS code it converted into machine language and then it display on computer and finally we can see the output.</p>
+
+            <h2>2. What does javascript event look do? </h2>
+            <p class="fs-5">In v8 javascript engine, there have two things.One is heap and another is call stack.Heap uses for memory management and stack uses for when we call function these function store in the stack.Stack works as last in first out(LIFO),that means which item store in the last it will be out at first.So at first it finds out the global main function then it entered the function and do the work according to the function after that it pop out that function and check others.That's how javascript event look works.</p>
+
+            <h2>3. Difference between Local Storage & Session Storage</h2>
+            <table class="table ">
+                <thead>
+                    <td class="text-center fw-bolder fs-4 text-info">Local Storage</td>
+                    <td class="text-center fw-bolder fs-4 text-info">Session Storage</td>
+                </thead>
+                <tr>
+                    <td class="fs-5"> Local storage keeps the update after closing the browser. </td>
+                    <td class="fs-5">Session storage doesn't keep the update after closing the browser</td>
+                </tr>
+                <tr>
+                    <td class="fs-5">Local Storage uses setItem </td>
+                    <td class="fs-5">Session Storage set the value.</td>
+                </tr>
+                <tr>
+                    <td class="fs-5">It needs to deleted via JS or manually</td>
+                    <td class="fs-5">  It's session based and working per window or tab</td>
+                </tr>
+            </table>
+        </footer>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
